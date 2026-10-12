@@ -1,0 +1,202 @@
+$purple-dark: #2A224B;
+$primary-yellow: #F7C924;
+$bg-gray: #F4F4F5;
+$text-dark: #3F3F40;
+$text-light: #808080;
+$font-family: 'Poppins', sans-serif;
+
+.site-footer {
+  font-family: $font-family;
+  width: 100%;
+}
+
+/* 1. Newsletter */
+.newsletter {
+  background-color: $purple-dark;
+  padding: 40px 0;
+  color: #fff;
+}
+
+.newsletter-inner {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.newsletter-text {
+  flex: 1;
+  min-width: 300px;
+
+  h2 {
+    font-size: 28px;
+    font-weight: 500;
+    margin-bottom: 12px;
+  }
+  p {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.5;
+    opacity: 0.9;
+  }
+}
+
+.newsletter-form {
+  flex: 1.5;
+  min-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.inputs-row {
+  display: flex;
+  gap: 16px;
+
+  input {
+    flex: 1;
+    padding: 14px 16px;
+    border: none;
+    border-radius: 4px;
+    font-family: $font-family;
+    font-size: 14px;
+    outline: none;
+    
+    &::placeholder {
+      color: #A0A0A0;
+    }
+  }
+
+  button {
+    background-color: $primary-yellow;
+    color: #000;
+    border: none;
+    border-radius: 4px;
+    padding: 0 32px;
+    font-weight: 700;
+    font-size: 14px;
+    cursor: pointer;
+    transition: opacity 0.3s;
+
+    &:hover {
+      opacity: 0.9;
+    }
+  }
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  font-weight: 300;
+  cursor: pointer;
+
+  input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+  }
+}
+
+/* 2. Informação e Links */
+.footer-info {
+  background-color: $bg-gray;
+  padding: 60px 0;
+}
+
+.info-inner {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+.info-brand {
+  flex: 1;
+  min-width: 250px;
+  padding-right: 60px;
+  border-right: 1px solid #E0E0E0;
+
+  .footer-logo {
+    width: 180px;
+    margin-bottom: 24px;
+  }
+
+  p {
+    font-size: 13px;
+    color: $text-light;
+    line-height: 1.6;
+    margin-bottom: 24px;
+  }
+
+  .social-icons {
+    display: flex;
+    gap: 16px;
+
+    .icon {
+      width: 24px;   /* Define a largura do ícone (ajuste se necessário) */
+      height: 24px;  /* Define a altura do ícone */
+      object-fit: contain;
+      cursor: pointer;
+      transition: opacity 0.2s ease;
+
+      &:hover {
+        opacity: 0.7; /* Dá um pequeno efeito visual ao passar o rato */
+      }
+    }
+  }
+}
+
+.info-links {
+  flex: 2;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.link-column {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  h3 {
+    font-size: 15px;
+    font-weight: 700;
+    color: $text-dark;
+    margin-bottom: 8px;
+  }
+
+  a {
+    font-size: 13px;
+    color: $text-light;
+    text-decoration: none;
+    transition: color 0.2s;
+
+    &:hover {
+      color: $text-dark;
+    }
+  }
+}
+
+/* 3. Copyright */
+.footer-copyright {
+  background-color: $bg-gray;
+  text-align: center;
+  padding: 20px 0;
+  border-top: 1px solid #E0E0E0;
+
+  p {
+    font-size: 12px;
+    color: $text-light;
+    margin: 0;
+  }
+}

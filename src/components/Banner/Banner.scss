@@ -1,0 +1,61 @@
+
+$primary-yellow: #F7C924; 
+$text-white: #FFFFFF;
+$font-family: 'Poppins', sans-serif;
+
+.banner {
+  
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../../assets/imagens/BannerBlackFriday.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  
+  height: 400px; 
+  display: flex;
+  align-items: center;
+  color: $text-white;
+  font-family: $font-family;
+
+  &__content {
+    
+    width: 100%;
+    
+    h2 {
+      font-size: 48px; 
+      font-weight: 700;
+      line-height: 1.1;
+      margin-bottom: 16px;
+    }
+
+    p {
+      font-size: 32px;
+      font-weight: 500;
+      margin-bottom: 40px;
+
+      .highlight {
+        color: $primary-yellow;
+        font-weight: 700;
+      }
+    }
+  }
+
+  &__button {
+    background-color: $primary-yellow;
+    color: #222; 
+    border: none;
+    border-radius: 6px;
+    padding: 14px 40px;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+
+    &:hover {
+      background-color: darken($primary-yellow, 10%);
+    }
+
+    &:active {
+      transform: scale(0.98);
+    }
+  }
+}
